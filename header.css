@@ -1,0 +1,101 @@
+nav.main-nav {
+    background-color:rgb(68, 68, 196);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+nav.main-nav a {
+    font-family: 'dosis';
+    text-decoration: none;
+    color:rgb(251, 247, 247);
+}
+
+ul.short-width {
+    display: flex;
+}
+
+ul.full-width {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media (min-width: 768px) {
+    ul.short-width {
+        display: none;
+    }
+    ul.full-width {
+        display: flex;
+    }
+
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-list a {
+    padding: 4px;
+    border-right: 1px solid rgb(216, 211, 216);
+}
+
+.nav-list li:last-of-type a { 
+    border-right: none;
+}
+
+.sub-nav {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    flex-grow: 1;
+    padding: 9px;
+    
+}
+
+.search-form input {
+   border: none;
+   border-bottom: 1px solid rgb(68, 68, 196);
+   flex-grow: 1;
+   padding-left: 5px;   
+}
+
+
+
+.search-form button {
+   border: none;
+   background-color: rgb(68, 68, 196);
+   color: rgb(251, 247, 247);
+}
+
+span.company-name {
+   color:rgb(68, 68, 196);
+   font-family: 'IM Fell Great Primer SC', serif; 
+   font-size: 35px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+.credit-offer {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 18px;
+    font-family: 'dosis';
+    text-decoration: none;
+    background-color: red;
+    color:white;
+    text-decoration: bold;
+    height: 25px;
+}
+
+
+

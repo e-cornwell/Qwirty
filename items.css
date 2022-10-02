@@ -1,0 +1,56 @@
+.items {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Open Sans';
+    flex-grow: 1;
+}
+
+.item {
+    flex: 1 0 2px; 
+    margin-right: 12px;
+    margin-bottom: 12px; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px -2px black;
+}
+
+.item-name {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(68, 68, 196);
+    padding: 6px;
+    color: rgb(251, 247, 247);
+    font-family: 'dosis';
+    font-size: 20px;
+}
+
+.item-description {
+    background-color:rgb(228, 225, 225);
+    padding: 5px;
+    font-family: 'dosis';
+
+}
+
+.fact-line {
+    background-color: rgb(68, 68, 196);
+    padding: 3px;
+    color: rgb(251, 247, 247);
+    font-family: 'dosis'
+}
+
+.add-item {
+    background-color:rgb(48, 48, 147);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .item {
+        font-size: larger;
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+}
+
